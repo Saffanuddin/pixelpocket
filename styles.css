@@ -1334,9 +1334,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-.insta-image {
+.insta-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .insta-overlay {
@@ -1414,6 +1416,33 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     color: var(--text-muted);
 }
+.founder-card-person {
+    text-align: center;
+}
+
+.founder-pixel {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+.founder-pixel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.founder-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.founder-role {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
 
 .founders-card {
     background: var(--gradient-primary);
@@ -1430,11 +1459,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
-.founder-pixel {
-    aspect-ratio: 1;
-    background: rgba(255, 255, 255, 0.2);
+.founder-pixel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: var(--radius-lg);
-    animation: pixelFloat 3s ease-in-out infinite;
 }
 
 .founder-pixel:nth-child(2) {
